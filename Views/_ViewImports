@@ -1,0 +1,3 @@
+@using _28._10._2024_ASP.NET_website
+@using _28._10._2024_ASP.NET_website.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
