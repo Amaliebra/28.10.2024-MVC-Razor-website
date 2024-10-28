@@ -1,5 +1,6 @@
-namespace MVC_Website;
+using MVC_Website.Services;
 
+namespace MVC_Website;
 public class Program
 {
     public static void Main(string[] args)
@@ -8,6 +9,7 @@ public class Program
 
         builder.Services.AddControllersWithViews();
 
+        builder.Services.AddScoped<BlogPostService>();
 
         var app = builder.Build();
 

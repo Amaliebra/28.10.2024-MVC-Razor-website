@@ -2,7 +2,7 @@ using MVC_Website.Models;
 using Microsoft.AspNetCore.Mvc;
 using MVC_Website.Services;
 
-namespace Microsoft.AspNetCore.Controllers;
+namespace MVC_Website.Controllers;
 
 public class MainController : Controller
 {

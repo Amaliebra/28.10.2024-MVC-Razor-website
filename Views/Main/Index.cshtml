@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Home";
+    @model IEnumerable<MVC_Website.Models.BlogPost>
+
+}
+
+<h1>Blog post</h1>
+
+@if (Model.Any())
+{
+    <ul>
+        @foreach (var post in Model)
+        {
+            <li>
+                <h2>@post.Title</h2>
+                <p>@post.Content</p>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>Blog posts are missing!</p>
+}
