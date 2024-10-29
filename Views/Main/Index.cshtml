@@ -1,24 +1,15 @@
 @{
     ViewData["Title"] = "Home";
-    @model IEnumerable<MVC_Website.Models.BlogPost>
+    @model InspirationalWords
 
 }
 
-<h1>Blog post</h1>
-
-@if (Model.Any())
+@foreach (var word in Model.Words)
 {
-    <ul>
-        @foreach (var post in Model)
-        {
-            <li>
-                <h2>@post.Title</h2>
-                <p>@post.Content</p>
-            </li>
-        }
-    </ul>
+    <h1>@word</h1>
 }
+
 else
 {
-    <p>Blog posts are missing!</p>
+    <p>Inpsiration is gone.</p>
 }
