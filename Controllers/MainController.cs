@@ -8,8 +8,8 @@ public class MainController : Controller
 {
     public IActionResult Index()
     {
-        
-        return View();
+        var InspirationWords = new InspirationWords();
+        return View(InspirationWords);
     }
 
 }
