@@ -1,15 +1,17 @@
 @{
     ViewData["Title"] = "Home";
-    @model InspirationalWords
+    @model InspirationWords
 
 }
 
-@foreach (var word in Model.Words)
+@if (Model.Words.Any())
 {
+    @foreach (var word in Model.Words)
+    {
     <h1>@word</h1>
+    }
 }
-
 else
 {
-    <p>Inpsiration is gone.</p>
+    <h1>Inpsiration is gone.</h1>
 }
