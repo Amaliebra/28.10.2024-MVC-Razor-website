@@ -18,10 +18,9 @@ function DisplayWords(){
     const words = @Html.Raw(Json.Serialize(Model.Words));
     const wordElement = document.getElementById("word");
 
-    let index = 0;
-    const intervalId = setInterval(() => {
-        wordElement.textContent = words[index];
-        index = (index + 1) % words.length;
+    setInterval(() => {
+        const randomWord = Math.floor(Math.random() * words.length);
+        wordElement.textContent = words[randomWord];
     }, 1000);
 
     setTimeout(() => clearInterval(intervalId), 6000);
