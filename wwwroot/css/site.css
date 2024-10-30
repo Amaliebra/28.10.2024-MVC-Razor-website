@@ -5,7 +5,25 @@
     box-sizing: border-box;
 }
 
+/* HEADER-----------------------*/
 header {
     background-color: aquamarine;
-    min-height: 120px;
+}
+
+nav {
+    min-height: 10vh;
+    background-color: rgb(226, 43, 122);
+}
+
+/* MAIN-------------------------*/
+main {
+    background-color: brown;
+    min-height: 80vh;
+}
+
+/* FOOTER ----------------------*/
+footer {
+    background-color: rgb(196, 184, 20);
+    min-height: 10vh;
+    
 }
