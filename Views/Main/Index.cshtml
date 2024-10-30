@@ -6,12 +6,25 @@
 
 @if (Model.Words.Any())
 {
-    @foreach (var word in Model.Words)
-    {
-    <h1>@word</h1>
-    }
+    <h1 id="word">Loading...</h1>
 }
 else
-{
+{ 
     <h1>Inpsiration is gone.</h1>
 }
+
+<script>
+function DisplayWords(){
+    const words = @Html.Raw(Json.Serialize(Model.Words));
+    const wordElement = document.getElementById("word");
+
+    let index = 0;
+    const intervalId = setInterval(() => {
+        wordElement.textContent = words[index];
+        index = (index + 1) % words.length;
+    }, 1000);
+
+    setTimeout(() => clearInterval(intervalId), 6000);
+}
+window.onload = DisplayWords;
+</script>
