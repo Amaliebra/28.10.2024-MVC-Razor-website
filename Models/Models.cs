@@ -7,11 +7,6 @@ public class BlogPost
     public string? Content { get; set; }
 }
 
-public class MainIndex 
-{
-    public string? Headline { get; set;}
-}
-
 public class InspirationWords
 {
     public List<string> Words {get; set;}

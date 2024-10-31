@@ -11,12 +11,11 @@
 <body>
     <header>
         <nav>
-            <a href="">Home</a>
-            <a href="">Blog</a>
+            <a href="@Url.Action("Index", "Home")">Home</a>
+            <a href="@Url.Action("Blog","Home")">Blog</a>
         </nav>
     </header>
     <main>
-        <h1>yo</h1>
         @RenderBody()
     </main>
     <footer>

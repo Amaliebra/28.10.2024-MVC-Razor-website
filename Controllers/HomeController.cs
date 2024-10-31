@@ -4,7 +4,7 @@ using MVC_Website.Services;
 
 namespace MVC_Website.Controllers;
 
-public class MainController : Controller
+public class HomeController : Controller
 {
     public IActionResult Index()
     {
@@ -12,4 +12,13 @@ public class MainController : Controller
         return View(InspirationWords);
     }
 
+    public IActionResult Home()
+    {
+        return View();
+    }
+    
+    public IActionResult Blog()
+    {
+        return View();
+    }
 }
