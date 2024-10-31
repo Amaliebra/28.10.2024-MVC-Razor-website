@@ -1,12 +1,11 @@
+@model IEnumerable<MVC_Website.Models.BlogPost>
 @{
     ViewData["Title"] = "Blogpost";
-    @model IEnumerable<MVC_Website.Models.BlogPost>
-
 }
 
 <h1>Blog post</h1>
 
-@if (Model.Any())
+@if (Model != null && Model.Any())
 {
     <ul>
         @foreach (var post in Model)
