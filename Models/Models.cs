@@ -9,11 +9,7 @@ public class BlogPost
 
 public class InspirationWords
 {
-    public List<string> Words {get; set;}
-
-    public InspirationWords()
-    {
-        Words = new List<string>
+    public List<string> Words {get;} = new List<string>
         {
             "Believe",
             "Dream",
@@ -33,5 +29,9 @@ public class InspirationWords
             "Passion",
             "Creativity"
         };
-    }
+}
+
+public class HomeViewModel
+{
+    public InspirationWords? InspirationWords { get; set; }
 }

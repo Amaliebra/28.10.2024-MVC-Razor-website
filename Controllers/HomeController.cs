@@ -8,8 +8,12 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        var InspirationWords = new InspirationWords();
-        return View(InspirationWords);
+        var model = new HomeViewModel
+        {
+            InspirationWords = new InspirationWords()
+            //Do i want more items??????????
+        };
+        return View(model);
     }
 
     public IActionResult Home()

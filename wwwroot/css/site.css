@@ -1,24 +1,42 @@
 * {
-    background-color: whitesmoke;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* HEADER-----------------------*/
 header {
     background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
 }
 
 nav {
-    min-height: 10vh;
+    min-width: 20vw;
     background-color: rgb(226, 43, 122);
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* MAIN-------------------------*/
 main {
     background-color: brown;
     min-height: 80vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#word {
+    font-size: 10vw;
 }
 
 /* FOOTER ----------------------*/
