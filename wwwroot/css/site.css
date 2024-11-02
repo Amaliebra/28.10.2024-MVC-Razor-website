@@ -7,7 +7,7 @@
 
 /* HEADER-----------------------*/
 header {
-    background-color: aquamarine;
+    background-color: #7ED4AD;
     display: flex;
     justify-content: center;
     min-height: 10vh;
@@ -15,20 +15,34 @@ header {
 
 nav {
     min-width: 20vw;
-    background-color: rgb(226, 43, 122);
     align-items: center;
     display: flex;
     justify-content: space-evenly;
 }
 
+.left-box, .right-box {
+    background-color: rgba(27, 88, 68, 0.0);
+    width: 90px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.left-box:hover, .right-box:hover{
+    background-color: #D76C82;
+}
+
 a {
+    color: #3D0301;
     text-decoration: none;
-    color: black;
+    font-size: 1.2em;
 }
 
 /* MAIN-------------------------*/
 main {
-    background-color: brown;
+    background-color: #D76C82;
     min-height: 80vh;
     justify-content: center;
     display: flex;
@@ -37,11 +51,12 @@ main {
 
 #word {
     font-size: 10vw;
+    color: #3D0301
 }
 
 /* FOOTER ----------------------*/
 footer {
-    background-color: rgb(196, 184, 20);
+    background-color: #B03052;
     min-height: 10vh;
     
 }
