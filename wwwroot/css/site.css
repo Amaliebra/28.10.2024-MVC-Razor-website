@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* https://colorhunt.co/palette/7ed4add76c82b030523d0301 */
 }
 
 /* HEADER-----------------------*/
@@ -28,6 +29,7 @@ nav {
     align-items: center;
     justify-content: center;
     display: flex;
+    transition: all 0.3s ease-in-out;
 }
 
 .left-box:hover, .right-box:hover{
